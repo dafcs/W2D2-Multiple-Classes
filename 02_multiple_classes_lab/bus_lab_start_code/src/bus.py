@@ -7,11 +7,11 @@ class Bus:
     def drive(self):
         return "Brum brum"
 
-    def pick_up(self,passenger):
-        self.passengers.append(passenger)
-
     def passenger_count(self):
         return len(self.passengers)
+    
+    def pick_up(self,passenger):
+        self.passengers.append(passenger)
 
     def drop_off(self,passenger):
         self.passengers.remove(passenger)
